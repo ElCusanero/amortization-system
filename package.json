@@ -1,7 +1,7 @@
 {
   "name": "amortization-system",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "This module allows you to calculate repayments for loans. It is based on the German, American, Direct and French amortization systems.",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
