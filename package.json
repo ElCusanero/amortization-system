@@ -1,15 +1,24 @@
 {
   "name": "amortization-system",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This module allows you to calculate repayments for loans. It is based on the German, American, Direct and French amortization systems.",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["amortization", "payment-methods", "credit", "payments", "js", "javascript", "nodejs"],
   "author": "",
   "license": "MIT",
   "dependencies": {
     "moment": "^2.29.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElCusanero/amortization-system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ElCusanero/amortization-system/issues"
+  },
+  "homepage": "https://github.com/ElCusanero/amortization-system#readme"
 }
