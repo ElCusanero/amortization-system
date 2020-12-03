@@ -69,13 +69,13 @@ const Frances = (borrowed_capital, how_many_payments, interest, date_start, borr
 
 				if (borrowed_type == "year") {
 					payment_date = dateStart
-									.add(1, "month")
+									.add(1, "year")
 									.format("YYYY-MM-DD");
 				}
 			}
 			else
 			{
-				if (borrowed_type == "year")
+				if (borrowed_type == "year" && how_many_payments == 12)
 				{
 					payment_date = dateStart
 						.add(1, "month")
@@ -84,7 +84,7 @@ const Frances = (borrowed_capital, how_many_payments, interest, date_start, borr
 				else
 				{
 					payment_date = dateStart
-						.add(idditionalDaysDateStart, "days")
+						.add(idditionalDaysDateStart, "day")
 						.format("YYYY-MM-DD");
 				}
 			}

@@ -53,18 +53,16 @@ const Americano = (borrowed_capital, how_many_payments, interest, date_start, bo
 
             if (borrowed_type == "year") {
                 payment_date = dateStart
-                    .add(1, "month")
+                    .add(1, "year")
                     .format("YYYY-MM-DD");
             }
         } else {
-            if (borrowed_type == "year") {
-                payment_date = dateStart
-                    .add(1, "month")
-                    .format("YYYY-MM-DD");
+            if (borrowed_type == "year" && how_many_payments == 12) {
+              payment_date = dateStart.add(1, "month").format("YYYY-MM-DD");
             } else {
-                payment_date = dateStart
-                    .add(idditionalDaysDateStart, "days")
-                    .format("YYYY-MM-DD");
+              payment_date = dateStart
+                .add(idditionalDaysDateStart, "day")
+                .format("YYYY-MM-DD");
             }
         }
         payments.push({
